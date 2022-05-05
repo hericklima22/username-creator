@@ -18,7 +18,9 @@ user_email_firstbps = f"{user_name}@firstbps.com.br"
 user_email_firstdecision = f"{user_name}@firstdecision.com.br"
 dia = datetime.today().strftime('%d')
 ano = datetime.today().strftime('%Y')
-senha = f"{sobrenome[0].capitalize()}{dia}{primeiro_nome[0].casefold()}@{ano}"
+fd = 'i' if sobrenome[0] == 'i' else sobrenome[0].capitalize()
+ld = 'L' if primeiro_nome[0] == 'l' else primeiro_nome[0].casefold()
+senha = f"{fd}{dia}{ld}@{ano}"
 
 if choice == 1:
 
