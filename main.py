@@ -23,6 +23,7 @@ ld = 'L' if primeiro_nome[0] == 'l' else primeiro_nome[0].casefold()
 senha = f"{fd}{dia}{ld}@{ano}"
 
 if choice == 1:
+    contrato = input("Projeto: ")
 
     print()
     print()
@@ -41,6 +42,8 @@ if choice == 1:
 
     print()
     print()
+
+    print("Projeto: ", contrato)
 
 if choice == 2:
     print()
